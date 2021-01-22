@@ -41,7 +41,8 @@
 		[1.115s][info][gc,heap,exit   ]   class space    used 418K, capacity 444K, committed 512K, reserved 1048576K
 
 并行GC:
-        java -Xms512M -Xmx512M -XX:+UseParallelGC      -Xlog:gc*  GCLogAnalysis    
+        java -Xms512M -Xmx512M -XX:+UseParallelGC      -Xlog:gc*  GCLogAnalysis   
+	
 		[0.019s][info][gc] Using Parallel
 		[0.021s][info][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
 		正在执行...
@@ -81,6 +82,7 @@
 
 并发GC:
       java -Xms512M -Xmx512M -XX:+UseConcMarkSweepGC         -Xlog:gc*  GCLogAnalysis
+      
 		[0.025s][info][gc] Using Concurrent Mark Sweep
 		[0.025s][info][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
 		正在执行...
@@ -405,6 +407,7 @@
 		[1.196s][info][gc,heap,exit   ]   class space    used 418K, capacity 444K, committed 512K, reserved 1048576K
 G1 GC:
    java -Xms1G -Xmx1G -XX:+UseG1GC        -Xlog:gc*  GCLogAnalysis
+   
 		[0.018s][info][gc,heap] Heap region size: 1M
 		[0.040s][info][gc     ] Using G1
 		[0.047s][info][gc,heap,coops] Heap address: 0x00000000c0000000, size: 1024 MB, Compressed Oops mode: 32-bit
