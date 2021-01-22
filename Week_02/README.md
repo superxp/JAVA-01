@@ -412,7 +412,7 @@ G1 GC:
 		[0.040s][info][gc     ] Using G1
 		[0.047s][info][gc,heap,coops] Heap address: 0x00000000c0000000, size: 1024 MB, Compressed Oops mode: 32-bit
 		正在执行...
-		[0.165s][info][gc,start     ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)  //触发YOUNG GC 
+		[0.165s][info][gc,start     ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)  //pause 触发YOUNG GC 
 		[0.166s][info][gc,task      ] GC(0) Using 4 workers of 4 for evacuation
 		[0.171s][info][gc,phases    ] GC(0)   Pre Evacuate Collection Set: 0.0ms
 		[0.171s][info][gc,phases    ] GC(0)   Evacuate Collection Set: 3.8ms
@@ -452,7 +452,7 @@ G1 GC:
 		[1.111s][info][gc,metaspace  ] GC(35) Metaspace: 3987K->3987K(1056768K)
 		[1.111s][info][gc            ] GC(35) Pause Young (Normal) (G1 Evacuation Pause) 812M->597M(1024M) 11.455ms
 		[1.111s][info][gc,cpu        ] GC(35) User=0.02s Sys=0.00s Real=0.01s
-		[1.112s][info][gc,start      ] GC(36) Pause Young (Concurrent Start) (G1 Humongous Allocation)  //巨型对象分配
+		[1.112s][info][gc,start      ] GC(36) Pause Young (Concurrent Start) (G1 Humongous Allocation)  //PAUSE 巨型对象分配
 		[1.113s][info][gc,task       ] GC(36) Using 4 workers of 4 for evacuation
 		[1.115s][info][gc,phases     ] GC(36)   Pre Evacuate Collection Set: 0.1ms
 		[1.116s][info][gc,phases     ] GC(36)   Evacuate Collection Set: 2.1ms
